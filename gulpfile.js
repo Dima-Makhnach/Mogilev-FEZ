@@ -61,7 +61,7 @@ gulp.task("html", function () {
 gulp.task('styles', function() {
   return gulp.src('source/sass/style.scss')
               .pipe(plumber())
-              .pipe(sass({ 
+              .pipe(sass({
                 includePaths: require('node-normalize-scss').includePaths
               }).on('error', sass.logError))
               .pipe(rename('style.css'))
@@ -154,6 +154,17 @@ gulp.task("serve", function() {
   gulp.watch("source/img/**/*.{png,jpg,svg}", gulp.series('image-del', 'copy-image')).on("change", server.reload);
   gulp.watch("source/*.html", gulp.parallel('html')).on("change", server.reload);
   gulp.watch("source/js/**/*.js", gulp.parallel('minifyjs')).on("change", server.reload);
+  gulp.watch("source/sass/**/*.css", gulp.parallel('copy-css')).on("change", server.reload);
+});
+
+// Copy css
+gulp.task("copy-css", function () {
+  return gulp.src([
+      "source/sass/**/*.css"
+    ], {
+      base: "source/sass"
+    })
+    .pipe(gulp.dest("build/css"));
 });
 
 // Copy main
@@ -183,6 +194,7 @@ gulp.task('development',
     "clean",
     "copy",
     "styles",
+    "copy-css",
     "copy-image",
     "html",
     "minifyjs",

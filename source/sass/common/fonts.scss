@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Open Sans Regular'),
+       local('OpenSansRegular'),
+       local('Open-Sans-Regular'),
+       local('OpenSans-Regular'),
+      url('../fonts/Open Sans Regular.woff') format('woff'),
+      url('../fonts/Open Sans Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Open Sans Bold'),
+       local('OpenSansBold'),
+       local('Open-Sans-Bold'),
+       local('OpenSans-Bold'),
+      url('../fonts/Open Sans Bold.woff') format('woff'),
+      url('../fonts/Open Sans Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Roboto'),
+       local('Roboto Regular'),
+       local('Roboto-Regular'),
+       local('RobotoRegular'),
+      url('../fonts/Roboto.woff') format('woff'),
+      url('../fonts/Roboto.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-style: normal;
+  src: local('MontserratExtraBold'),
+       local('Montserrat ExtraBold'),
+       local('Montserrat-ExtraBold'),
+      url('../fonts/Montserrat ExtraBold.woff') format('woff'),
+      url('../fonts/Montserrat ExtraBold.woff2') format('woff2');
+}
