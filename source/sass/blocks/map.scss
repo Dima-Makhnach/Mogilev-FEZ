@@ -1,0 +1,12 @@
+.map {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &__content {
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+
+    vertical-align: bottom;
+  }
+}

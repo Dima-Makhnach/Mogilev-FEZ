@@ -1,0 +1,401 @@
+.land-gallery {
+  max-width: 630px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  font-family: $font-os;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-family: $font-mt;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+    color: #1A1A1A;
+
+    &--desc {
+      display: none;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    overflow: hidden;
+  }
+
+  &__button {
+    display: block;
+    width: 92%;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    font-family: $font-os;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    background: #ED1C23;
+    border-radius: 4px;
+
+    outline: 0;
+  }
+
+  &__view-map {
+    position: relative;
+
+    display: block;
+    width: 92%;
+    height: 60px;
+    margin: 0 auto;
+    padding-left: 10%;
+
+    font-family: $font-os;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 56px;
+    text-align: center;
+    color: #ED1C23;
+    text-decoration: none;
+
+    background: #FFFFFF;
+    border: 2px solid #ED1C23;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    outline: 0;
+
+    &:before {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 18%;
+
+      width: 30px;
+      height: 26px;
+      margin-top: -12px;
+
+      background-image: url('../img/main-page/land-gallery/icon_map.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 30px 26px;
+    }
+  }
+
+  .owl-nav {
+    top: 20%;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 100%;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    background-color: rgba(237, 28, 35, 0.3);;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev:after,
+  .owl-carousel .owl-nav button.owl-next:after {
+    background-color: #ED1C23;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev:before,
+  .owl-carousel .owl-nav button.owl-next:before {
+    border-color: white;
+  }
+}
+
+.unit-land {
+  font-family: inherit;
+
+  &__img-container {
+    position: relative;
+  }
+
+  &__schema {
+    display: none;
+  }
+
+  &__desc {
+    display: none;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1A1A1A;
+  }
+
+  &__button-3d {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 125px;
+    height: 125px;
+    margin-left: -62.5px;
+    margin-top: -62.5px;
+
+    text-decoration: none;
+    color: black;
+    font-family: $font-os;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #1A1A1A;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+
+    z-index: 0;
+
+    &--tour {
+      display: block;
+      width: 100%;
+
+      font-size: 14px;
+      color: #ED1C23;
+    }
+
+    &:before {
+      content: '';
+
+      position: absolute;
+
+      width: 105px;
+      height: 105px;
+
+      border-radius: 50%;
+      background-color: white;
+
+      z-index: -1;
+    }
+  }
+}
+
+// Responsive
+
+@media (min-width: 425px) {
+  .land-gallery {
+    .owl-nav {
+      top: 25%;
+    }
+  }
+}
+
+@media (min-width: 545px) {
+  .land-gallery {
+    .owl-nav {
+      top: 30%;
+    }
+  }
+}
+
+@media (min-width: 630px) {
+  .land-gallery {
+    .owl-nav {
+      top: 33%;
+    }
+  }
+}
+
+@media (min-width: 1290px) {
+  .land-gallery {
+    width: 100%;
+    max-width: 1290px;
+    padding: 100px 0;
+
+    box-sizing: border-box;
+
+    &__title {
+      position: relative;
+
+      margin-bottom: 60px;
+      padding-left: 130px;
+
+      font-family: $font-mt;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 44px;
+      color: #1A1A1A;
+      text-align: left;
+
+      &--desc {
+        display: block;
+        margin-top: 10px;
+
+        font-family: $font-os;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: #999999;
+      }
+
+      &:before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100px;
+        height: 46px;
+
+        background-image: url('../img/main-page/land-gallery/logo_title_element.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100px 46px;
+      }
+    }
+
+    &__view-map {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    .owl-carousel .owl-item img {
+      width: auto;
+    }
+  }
+
+  .unit-land {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1290px;
+
+    &__content {
+      width: 100%;
+      max-width: 520px;
+      margin-left: 30px;
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &__desc {
+      display: block;
+      margin-bottom: 90px;
+
+      font-family: $font-os;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #1A1A1A;
+
+      &--style {
+        font-weight: 700;
+      }
+    }
+
+    &__schema {
+      display: block;
+      width: 252px;
+      height: 60px;
+
+      font-family: $font-os;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      color: #FFFFFF;
+      text-decoration: none;
+      line-height: 56px;
+
+      background: #ED1C23;
+      border-radius: 4px;
+    }
+
+    &__img {
+      width: 630px;
+      height: 420px;
+    }
+  }
+}
+
+@media (min-width: 1450px) {
+  .land-gallery {
+    &__list {
+      overflow: visible;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+      left: -80px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev:before {
+      left: 50%;
+      margin-left: -4px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next:before {
+      left: 50%;
+      margin-left: -9px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: -80px;
+    }
+  }
+
+  .unit-land__img {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1510px) {
+  .land-gallery {
+
+    .owl-carousel .owl-nav button.owl-prev {
+      left: -110px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: -110px;
+    }
+  }
+}

@@ -35,7 +35,7 @@
 
     box-sizing: border-box;
 
-    z-index: 2;
+    z-index: 3;
 
     &--first {
       display: -webkit-flex;
@@ -287,6 +287,8 @@
     padding-top: 125px;
 
     background: #F7F7F7;
+
+    z-index: 2;
   }
 
   &__list-menu {
