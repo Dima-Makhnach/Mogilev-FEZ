@@ -6,6 +6,8 @@
 
 // Blocks
 @import "blocks/header";
+
+// Main Page
 @import "blocks/main-content";
 @import "blocks/full-block";
 @import "blocks/land-gallery";
@@ -13,8 +15,11 @@
 @import "blocks/territory";
 @import "blocks/residents";
 @import "blocks/map";
+
 @import "blocks/footer";
 
+// Settings
+@import "blocks/investors-cart";
 
 .visually-hidden {
 	position: absolute !important;
