@@ -4,17 +4,22 @@
 @import "common/fonts";
 @import "common/variables";
 
-// Blocks
 @import "blocks/header";
 
 // Main Page
-@import "blocks/main-content";
-@import "blocks/full-block";
-@import "blocks/land-gallery";
-@import "blocks/investors";
-@import "blocks/territory";
-@import "blocks/residents";
-@import "blocks/map";
+@import "blocks/main-page/main-content";
+@import "blocks/main-page/full-block";
+@import "blocks/main-page/land-gallery";
+@import "blocks/main-page/investors";
+@import "blocks/main-page/territory";
+@import "blocks/main-page/residents";
+@import "blocks/main-page/map";
+
+// Territory
+@import "blocks/territory/territory-content";
+@import "blocks/territory/intro";
+@import "blocks/territory/submenu";
+@import "blocks/territory/map";
 
 @import "blocks/footer";
 

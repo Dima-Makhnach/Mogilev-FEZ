@@ -1,0 +1,65 @@
+.desktop-intro {
+  display: none;
+}
+
+@media (min-width: 1290px) {
+  .desktop-intro {
+    display: flex;
+    align-items: center;
+    max-width: 1920px;
+    min-height: 166px;
+    margin: 0 auto;
+
+    background-image: url('../img/territory/img_bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1920px 166px;
+
+    box-sizing: border-box;
+
+    &__title {
+      position: relative;
+
+      width: 100%;
+      max-width: 1290px;
+      margin: 0 auto;
+      padding-left: 123px;
+
+      font-family: $font-mt;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 44px;
+      line-height: 54px;
+      color: #FFFFFF;
+
+      box-sizing: border-box;
+
+      &:before {
+        content: '';
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 101px;
+        height: 45px;
+
+        background-image: url('../img/territory/logo.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 101px 45px;
+      }
+
+      &--desc {
+        display: block;
+
+        font-family: $font-os;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #F0F0F0;
+      }
+    }
+  }
+}
