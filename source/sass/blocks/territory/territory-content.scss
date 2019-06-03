@@ -100,6 +100,10 @@
     }
 
     &.active-breadcrumb {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
       color: #ED1C23;
     }
   }
@@ -118,6 +122,7 @@
   top: 20px;
 
   width: 100%;
+  max-width: 1290px;
 
   &__toggle-button {
     position: absolute;
@@ -139,6 +144,7 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+
     outline: 0;
 
     cursor: pointer;
@@ -186,7 +192,7 @@
     font-weight: 700;
     font-size: 18px;
 
-    border: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
   }
 }
 
@@ -197,22 +203,58 @@
   &__container {
     margin: 0;
     margin-top: 10px;
-    padding: 0 40px;
+    padding: 0px;
     padding-bottom: 10px;
 
     border: 0;
+    border-bottom: 1px solid #E5E5E5;
   }
 
   &__title {
-    margin-bottom: 10px;
+    position: relative;
+
+    width: 100%;
+    padding: 0 40px;
 
     font-family: $font-os;
     font-size: 14px;
+    line-height: 21px;
+
+    cursor: pointer;
+
+    &:before {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 17px;
+
+      display: inline-block;
+      padding: 4px;
+      margin-top: -4px;
+
+      border: solid black;
+      border-width: 0 2px 2px 0;
+
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+
+      transition: all 0.4s linear 0s;
+    }
+
+    &.open-menu-filter:before {
+      margin-top: -5px;
+
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
+    margin-top: 10px;
+    padding: 0 40px;
 
     list-style: none;
   }
@@ -221,18 +263,96 @@
     margin-bottom: 15px;
   }
 
+  &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:checked + .city-filter__checkbox:after {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 1.5px;
+
+      width: 7px;
+      height: 7px;
+      margin-top: -3.5px;
+
+      background-image: url('../img/territory/check-red.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 7px 7px;
+    }
+
+    &:disabled + .city-filter__checkbox {
+      background-color: #999999;
+    }
+
+    &:checked:disabled + .city-filter__checkbox:after {
+      left: 1px;
+
+      width: 8px;
+
+      background-image: url('../img/territory/check-white.svg');
+      background-size: 8px 7px;
+    }
+  }
+
   &__label {
+    position: relative;
+
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     align-items: center;
+
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+    margin-top: -6.5px;
+
+    border: 2px solid #999999;
   }
 
   &__text {
     padding-left: 25px;
-    
+
     font-family: $font-os;
     font-size: 12px;
+  }
+
+  // ScrollBar Settings
+
+  .scrollable.default-skin .scroll-bar.vertical {
+    right: 15px;
+
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    padding: 1px 0;
+
+    background-color: #C4C4C4;
+    border-radius: 3px;
+
+    box-sizing: border-box;
+
+    & .thumb {
+      width: 4px;
+      margin-top: 1px;
+
+      opacity: 1;
+
+      background-color: white;
+    }
   }
 }
 
@@ -240,6 +360,26 @@
   .territory-map {
     &__description {
       padding-right: 400px;
+    }
+  }
+
+  .filter-map {
+    left: 50%;
+
+    margin-left: -645px;
+
+    &__toggle-button {
+      display: none;
+      left: 0;
+
+      margin-left: auto;
+    }
+
+    &__container {
+      top: 20px;
+      left: 0;
+
+      margin-left: 0;
     }
   }
 }

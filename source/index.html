@@ -10,6 +10,9 @@
 
   <title>Territory - FEZ Mogilev</title>
 
+  <!-- ScrollBar Library -->
+  <link rel="stylesheet" href="css/custom-scrollbar/jquery.custom-scrollbar.css">
+
   <!-- Custom -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,8 +39,8 @@
           <img src="img/header/icon_search.svg" width="24" height="24" alt="Поиск по сайту" class="header__search-img">
         </a>
       </div>
-      <a href="" class="header__phone">+375 (222) 31-01-48</a>
-      <a href="" class="header__mail">info@fezmogilev.by</a>
+      <a href="tel:+375222310148" class="header__phone">+375 (222) 31-01-48</a>
+      <a href="mailto:info@fezmogilev.by" class="header__mail">info@fezmogilev.by</a>
       <div class="header__mobile-container header__mobile-container--second">
         <ul class="header__list-social">
           <li class="header__item-social">
@@ -99,8 +102,8 @@
   <!-- /Header -->
 
   <!-- Main Content -->
-  <main class="territory-content">
-    <h1 class="territory-content__title visually-hidden">Карта террритории</h1>
+  <main class="territory-unit">
+    <h1 class="territory-unit__title visually-hidden">Страница еденицы проекта</h1>
 
     <!-- Intro -->
     <section class="territory-content__desktop-intro desktop-intro">
@@ -126,137 +129,150 @@
     </section>
     <!-- Submenu -->
 
-    <!-- Map Content -->
-    <section class="territory-content__map territory-map">
+    <section class="territory-unit__content unit-content">
 
-      <!-- Description -->
-      <div class="territory-map__container">
-        <div class="territory-map__breadcrumbs breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">СЭЗ "Могилев"</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Территория</a></li>
-            <li class="breadcrumbs__item active-breadcrumb">Участок 1</li>
+      <!-- breadcrumb -->
+      <div class="unit-content__breadcrumbs breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">СЭЗ "Могилев"</a></li>
+          <li class="breadcrumbs__item active-breadcrumb">Территория</li>
+        </ul>
+      </div>
+      <!-- /breadcrumb -->
+
+      <h2 class="unit-content__title">Участок 1</h2>
+
+      <div class="unit-content__container">
+
+        <!-- Content Image -->
+        <div class="unit-content__img-container img-content">
+          <div class="img-content__container">
+            <img src="img/territory-unit/image-content.png" width="549" height="573" alt="Фотография участка" class="img-content__img increase-img-click">
+          </div>
+          <ul class="img-content__list">
+            <li class="img-content__item">
+              <img src="http://imgholder.ru/50x22" width="50" height="22" alt="Нужны фото" class="img-content__desc-img">
+              <p class="img-content__desc-text"> - граница территории СЭЗ "Могилев"</p>
+            </li>
+            <li class="img-content__item">
+              <img src="http://imgholder.ru/50x22" width="50" height="22" alt="Нужны фото" class="img-content__desc-img">
+              <p class="img-content__desc-text"> - свобоный земельный участок</p>
+            </li>
+            <li class="img-content__item">
+              <img src="http://imgholder.ru/50x22" width="50" height="22" alt="Нужны фото" class="img-content__desc-img">
+              <p class="img-content__desc-text"> - свободные производственные площади</p>
+            </li>
           </ul>
         </div>
-        <h2 class="territory-map__title">Территория</h2>
-        <p class="territory-map__description">Свободная экономическая зона «Могилев» – это часть территории Республики Беларусь с определенными границами, в пределах которой в отношении ее резидентов устанавливается и действует специальный правовой
-          режим для осуществления ими инвестиционной и предпринимательской деятельности.</p>
-      </div>
-      <!-- Description -->
+        <!-- /Content Image -->
 
-      <!-- Filter -->
-      <div class="territory-map__content">
-
-        <div class="territory-map__filter filter-map">
-          <button type="button" class="filter-map__toggle-button filter-mobile-toggle">Фильтр</button>
-          <div class="filter-map__container">
-            <h3 class="filter-map__title">Объекты</h3>
-            <form method="POST" action="" class="filter-map__city city-filter">
-              <fieldset class="city-filter__container">
-                <legend class="city-filter__title">Город</legend>
-                <ul class="city-filter__list">
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">Могилев</span>
-                    </label>
-                  </li>
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">Осиповичи</span>
-                    </label>
-                  </li>
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">Шклов</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="city-filter__container">
-                <legend class="city-filter__title">Территория СЭЗ</legend>
-                <ul class="city-filter__list">
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">Участок №1</span>
-                    </label>
-                  </li>
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">Участок №2</span>
-                    </label>
-                  </li>
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">Участок №3</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="city-filter__container">
-                <legend class="city-filter__title">Земельные участки</legend>
-                <ul class="city-filter__list">
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">от 1 до 10 га</span>
-                    </label>
-                  </li>
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">от 10 до 100 га</span>
-                    </label>
-                  </li>
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">от 100 до 1000 га</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="city-filter__container">
-                <legend class="city-filter__title">Свободные площади</legend>
-                <ul class="city-filter__list">
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">от 0 до 3 000 м2</span>
-                    </label>
-                  </li>
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">от 3 000 до 15 000 м2</span>
-                    </label>
-                  </li>
-                  <li class="city-filter__item">
-                    <label class="city-filter__label">
-                      <input type="checkbox" class="city-filter__input">
-                      <span class="city-filter__text">свыше 15 000 м2</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </form>
-          </div>
+        <!-- land plot -->
+        <div class="unit-content__land-plot land-plot">
+          <h2 class="land-plot__title">Северный промышленный узел</h2>
+          <p class="land-plot__area">Общая площадь участка составляет <span class="land-plot__result">78,5 га.</span></p>
+          <p class="land-plot__all-area">Общая площадь свободных производственных площадей составляет <span class="land-plot__result">1 474,2 м2.</span></p>
+          <ul class="land-plot__list">
+            <li class="land-plot__item">
+              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
+            </li>
+            <li class="land-plot__item">
+              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
+            </li>
+            <li class="land-plot__item">
+              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
+            </li>
+            <li class="land-plot__item">
+              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
+            </li>
+            <li class="land-plot__item">
+              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
+            </li>
+          </ul>
         </div>
+        <!-- /land plot -->
 
-        <!-- /Filter -->
-
-        <!-- Map -->
-        <iframe class="territory-map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa868e599f4c54beee9e59c2cdd28f75f11da0f9bab764a80567c71c902f72b7d&amp;source=constructor" width="320" height="636" frameborder="0"></iframe>
-        <!-- /Map -->
+        <!-- Another area -->
+        <div class="unit-content__enterprises enterprises">
+          <h2 class="enterprises__title">Список предприятий, расположенных на участке:</h2>
+          <ol class="enterprises__list">
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+            <li class="enterprises__item">
+              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
+            </li>
+          </ol>
+        </div>
+        <!-- /Another area -->
       </div>
     </section>
-    <!-- Map Content -->
 
   </main>
   <!-- Main Content -->
@@ -316,12 +332,8 @@
   <!-- Mobile Menu -->
   <script src="js/menu-toggle.js"></script>
 
-  <!-- Yandex Map -->
-  <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script src="js/yandex-map.js"></script>
-
-  <!-- Filter -->
-  <script src="js/filter-territory.js"></script>
+  <!-- Increase Image -->
+  <script src="js/territory-unit/increase-img.js"></script>
 </body>
 
 </html>
