@@ -10,6 +10,10 @@ jQuery(document).ready(function($) {
       0: {
         items: 1
       },
+      768: {
+        items: 2,
+        center: false,
+      },
       1290: {
         items: 4,
         center: false
@@ -42,6 +46,12 @@ jQuery(document).ready(function($) {
       },
       360: {
         items: 2
+      },
+      768: {
+        items: 3
+      },
+      900: {
+        items: 4
       },
       1290: {
         items: 6,

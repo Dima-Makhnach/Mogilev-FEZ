@@ -76,42 +76,8 @@
 
   // Video Content
 
-  &__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.3);
-
-    box-sizing: border-box;
-
-    z-index: 1000;
-    cursor: pointer;
-
-    display: none;
-  }
-
   &__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    width: 75%;
-    min-height: 300px;
-    height: auto;
-    margin: auto;
-
-    line-height: 570px;
+    display: none;
   }
 
   // Video Content
@@ -262,7 +228,7 @@
 
 // Responsive
 
-@media (min-width: 1290px) {
+@media (min-width: 1200px) {
   .full-block {
     width: 100%;
     max-width: 1920px;

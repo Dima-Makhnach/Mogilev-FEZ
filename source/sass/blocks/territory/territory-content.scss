@@ -172,6 +172,8 @@
     top: 50px;
     left: 50%;
 
+    display: none;
+
     width: 305px;
     margin: 0 auto;
     margin-left: -152.5px;
@@ -201,6 +203,8 @@
 .city-filter {
 
   &__container {
+    position: relative;
+
     margin: 0;
     margin-top: 10px;
     padding: 0px;
@@ -251,12 +255,18 @@
   }
 
   &__list {
+    display: none;
     margin: 0;
-    padding: 0;
+    max-height: 230px;
     margin-top: 10px;
     padding: 0 40px;
+    padding-right: 20px;
 
     list-style: none;
+
+    scroll: auto;
+
+    overflow: hidden;
   }
 
   &__item {
@@ -328,45 +338,321 @@
     font-family: $font-os;
     font-size: 12px;
   }
+}
 
-  // ScrollBar Settings
+// Results element
 
-  .scrollable.default-skin .scroll-bar.vertical {
-    right: 15px;
+.result-element {
+  position: absolute;
+  left: 50%;
+
+  display: none;
+
+  width: 320px;
+  padding: 20px;
+  margin-left: -160px;
+
+  background: #F7F7F7;
+
+  box-sizing: border-box;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-family: $font-os;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__area,
+  &__all-area {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-family: $font-os;
+    font-size: 12px;
+    line-height: 20px;
+
+    &--style {
+      font-weight: bold;
+    }
+  }
+
+  &__all-area {
+    margin-bottom: 15px;
+  }
+
+  &__more-link {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    font-family: $font-os;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ED1C23;
+    text-decoration: none;
+  }
+
+  &__land-container {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    border-top: 1px solid #E5E5E5;
+  }
+
+  &__land-list {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__land-link {
+    font-family: $font-os;
+    font-size: 12px;
+    line-height: 21px;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__free-area {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &__free-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  &__free-link {
+    font-family: $font-os;
+    font-size: 12px;
+    line-height: 21px;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // controls buttons
+
+  &__container-button {
+    position: absolute;
+    top: 0;
+    right: -25px;
 
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    justify-content: center;
-    padding: 1px 0;
+    flex-wrap: wrap;
+    width: 25px;
+  }
 
-    background-color: #C4C4C4;
-    border-radius: 3px;
+  &__close,
+  &__slide {
+    position: relative;
 
-    box-sizing: border-box;
+    flex-basis: 100%;
 
-    & .thumb {
-      width: 4px;
-      margin-top: 1px;
+    margin-bottom: 5px;
+    height: 40px;
+    padding: 0;
 
-      opacity: 1;
+    font-size: 0;
 
-      background-color: white;
+    border: 0;
+    background-color: white;
+    border-radius: 0px 4px 4px 0px;
+
+    outline: 0;
+
+    cursor: pointer;
+  }
+
+  &__close {
+
+    &:before,
+    &:after {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 17px;
+      height: 1px;
+      margin-left: -8.5px;
+
+      background-color: #ED1C23;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__slide {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+
+      border: solid #ED1C23;
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      margin-top: -5px;
+      margin-left: -3.5px;
+      padding: 5px;
+      transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
     }
   }
 }
 
-@media (min-width: 1290px) {
+// ScrollBar
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 6px;
+  margin: 0;
+  margin-bottom: 10px;
+
+  background: #C4C4C4;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+  left: 0px;
+
+  width: 4px;
+
+  border: 1px solid #C4C4C4;
+  background: #FFFFFF;
+  border-radius: 3px;
+}
+
+// ScrollBar
+
+// CheckBox
+
+.city-filter__wrapper-checkbox {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+
+  margin-top: -8.5px;
+}
+
+.city-filter__checkbox-label {
+  display: inline-block;
+  right: 0px;
+  top: 0;
+  position: relative;
+  width: 28px;
+  height: 18px;
+  z-index: 10;
+  line-height: 17px;
+  background: #548D72;
+  border-radius: 30px;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+}
+
+.free-wrapper__label {
+  background-color: #ED1C23;
+}
+
+.city-filter__checkbox-label:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  display: block;
+  margin-top: -7px;
+  background: white;
+    border-radius: 30px;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+}
+
+#city-land-checkbox,
+#city-free-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#city-land-checkbox:checked + .city-filter__checkbox-label {
+  left: 0px;
+}
+
+#city-land-checkbox:checked + .city-filter__checkbox-label:after {
+  left: 12px;
+  content: "";
+}
+
+#city-free-checkbox:checked + .city-filter__checkbox-label {
+  left: 0px;
+}
+
+#city-free-checkbox:checked + .city-filter__checkbox-label:after {
+  left: 12px;
+  content: "";
+}
+
+// CheckBox
+
+@media (min-width: 1200px) {
   .territory-map {
     &__description {
       padding-right: 400px;
     }
   }
 
-  .filter-map {
-    left: 50%;
+  .result-element {
+    display: none !important;
+  }
 
-    margin-left: -645px;
+  .filter-map {
+
+    @media (min-width: 1290px) {
+      left: 50%;
+
+      margin-left: -645px;
+    }
 
     &__toggle-button {
       display: none;
@@ -379,6 +665,7 @@
       top: 20px;
       left: 0;
 
+      display: block;
       margin-left: 0;
     }
   }

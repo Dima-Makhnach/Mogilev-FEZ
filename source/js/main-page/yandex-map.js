@@ -29,7 +29,7 @@ ymaps.ready(function () {
 
         myPlacemarkWithContent = new ymaps.Placemark([53.904947, 30.343815], {
             hintContent: 'Собственный значок метки с контентом',
-            balloonContent: 'А эта — новогодняя'
+            balloonContent: 'Администрация СЭЗ «Могилев». Ул. Ленинская 63, г. Могилев, 212030, Республика Беларусь'
             // iconContent: '12'
         }, {
             // Опции.

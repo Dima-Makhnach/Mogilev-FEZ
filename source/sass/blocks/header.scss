@@ -1,5 +1,4 @@
 .header {
-
   font-family: $font-os;
 
   box-sizing: border-box;
@@ -61,10 +60,6 @@
   }
 
   &__eye {
-    display: -webkit-inline-flex;
-    display: -ms-inline-flex;
-    display: inline-flex;
-    align-items: center;
     margin-right: 20px;
 
     text-decoration: none;
@@ -74,6 +69,7 @@
 
   &__img-eye {
     line-height: 30px;
+    vertical-align: text-bottom;
   }
 
   &__list-lang {
@@ -86,12 +82,6 @@
     padding: 0;
 
     list-style: none;
-  }
-
-  &__search-link {
-    display: inline-block;
-
-    text-decoration: none;
   }
 
   &__item-lang {
@@ -314,9 +304,58 @@
   // Second desktop line
 }
 
+// Search element
+
+.header-search {
+  display: inline-flex;
+  align-items: center;
+
+  &__link {
+    display: inline-block;
+    height: 30px;
+    padding: 0;
+    padding-right: 5px;
+
+    text-decoration: none;
+
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+
+    cursor: pointer;
+  }
+
+  &__img {
+    vertical-align: bottom;
+  }
+}
+
+.search-form {
+  display: none;
+
+  &__container {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+  }
+
+  &__input {
+
+    font-family: $font-os;
+    font-size: 14px;
+
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+
+    outline: 0;
+  }
+}
+
 // Responsive
 
-@media (min-width: 1290px) {
+@media (min-width: 1200px) {
   .header {
 
     // First Line
@@ -358,12 +397,6 @@
         margin-right: 0;
         margin-left: 40px;
       }
-    }
-
-    &__search-link {
-      position: absolute;
-      bottom: -57px;
-      right: 30px;
     }
 
     &__phone {
@@ -439,7 +472,11 @@
       align-items: center;
       max-width: 720px;
       padding-left: 0;
-      margin-left: 130px;
+      margin-left: 50px;
+
+      @media(min-width: 1290px) {
+        margin-left: 130px;
+      }
     }
 
     &__item-menu {
@@ -453,7 +490,7 @@
 
     &__resident {
       position: absolute;
-      top: -80px;
+      top: -81px;
       right: 0;
 
       width: 250px;
@@ -470,6 +507,32 @@
       margin: 0 auto;
     }
 
+    .open-search {
+      max-width: 620px;
+      margin-left: 20px;
+
+      transition: all 0.3s linear 0s;
+
+      @media (min-width: 1290px) {
+        max-width: 720px;
+        margin-left: 50px;
+      }
+
+      & li {
+        margin-right: 10px;
+
+        @media (min-width: 1290px) {
+          margin-right: 20px;
+        }
+      }
+    }
+
     // Second Line
+  }
+
+  .header-search {
+    position: absolute;
+    bottom: -57px;
+    right: 30px;
   }
 }

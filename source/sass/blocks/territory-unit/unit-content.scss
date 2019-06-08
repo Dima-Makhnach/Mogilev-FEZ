@@ -222,12 +222,16 @@
 
 // Responsive
 
-@media (min-width: 1290px) {
+@media (min-width: 1200px) {
   .unit-content {
-    max-width: 1290px;
+    max-width: 1200px;
     margin: 0 auto;
 
     box-sizing: border-box;
+
+    @media (min-width: 1290px) {
+      max-width: 1290px;
+    }
 
     &__title {
       margin-bottom: 15px;
@@ -269,7 +273,11 @@
   }
 
   .enterprises {
-    max-width: 680px;
+    max-width: 600px;
+
+    @media (min-width: 1290px) {
+      max-width: 680px;
+    }
 
     &__title {
       margin-bottom: 40px;

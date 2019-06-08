@@ -11,7 +11,10 @@
   <title>Territory - FEZ Mogilev</title>
 
   <!-- ScrollBar Library -->
-  <link rel="stylesheet" href="css/custom-scrollbar/jquery.custom-scrollbar.css">
+  <link rel="stylesheet" href="css/custom-scrollbar/jquery.mCustomScrollbar.css">
+
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="css/jquery-ui.css">
 
   <!-- Custom -->
   <link rel="stylesheet" href="css/style.css">
@@ -20,11 +23,18 @@
 <body>
   <!-- Header -->
   <header class="header">
+
+    <!-- First desktop line -->
     <div class="header__first-line">
       <div class="header__mobile-container header__mobile-container--first">
+
+        <!-- Eye -->
         <a href="#" class="header__eye">
           <img src="img/header/icon_eye.svg" width="30" height="22" alt="Режим для слабовидящих" class="header__img-eye">
         </a>
+        <!-- Eye -->
+
+        <!-- Language link -->
         <ul class="header__list-lang">
           <li class="header__item-lang">
             <a href="#" class="header__link-lang">RU</a>
@@ -35,12 +45,32 @@
             <a href="#" class="header__link-lang">TR</a>
           </li>
         </ul>
-        <a href="" class="header__search-link">
-          <img src="img/header/icon_search.svg" width="24" height="24" alt="Поиск по сайту" class="header__search-img">
-        </a>
+        <!-- Language link -->
+
+        <!-- Form search -->
+        <div class="header__search-container header-search">
+          <button type="button" class="header-search__link toggle-search-form">
+            <img src="img/header/icon_search.svg" width="24" height="24" alt="Поиск по сайту" class="header-search__img">
+          </button>
+          <form action="" method="POST" class="header-search__form search-form open-search-form">
+            <fieldset class="search-form__container">
+              <legend class="search-form__title visually-hidden">Форма поиска</legend>
+              <label for="" class="search-form__label">
+                <input type="text" class="search-form__input">
+              </label>
+            </fieldset>
+          </form>
+        </div>
+        <!-- Form search -->
+
       </div>
+
+      <!-- Mobile and Mail -->
       <a href="tel:+375222310148" class="header__phone">+375 (222) 31-01-48</a>
       <a href="mailto:info@fezmogilev.by" class="header__mail">info@fezmogilev.by</a>
+      <!-- Mobile and Mail -->
+
+      <!-- Social Link -->
       <div class="header__mobile-container header__mobile-container--second">
         <ul class="header__list-social">
           <li class="header__item-social">
@@ -64,17 +94,26 @@
             </a>
           </li>
         </ul>
-
       </div>
+      <!-- Social Link -->
+
     </div>
+    <!-- First desktop line -->
+
+    <!-- Second desktop line -->
     <div class="header__second-line">
       <div class="header__second-container">
-        <a href="" class="header__logo">
+
+        <!-- Logo -->
+        <a href="index.html" class="header__logo">
           <picture>
-            <source media="(min-width: 1290px)" srcset="img/header/logo_desktop.svg">
+            <source media="(min-width: 1200px)" srcset="img/header/logo_desktop.svg">
             <img src="img/header/logo_mobile.svg" width="150" height="42" alt="Логотип" class="header__logo-img">
           </picture>
         </a>
+        <!-- Logo -->
+
+        <!-- Nav menu -->
         <button class="header__toggle-menu toggle-mobile-menu">Меню</button>
         <nav class="header__navigation navigation-container">
           <ul class="header__list-menu">
@@ -96,14 +135,18 @@
           </ul>
           <a href="" class="header__resident">Стать резидентом</a>
         </nav>
+        <!-- Nav menu -->
+
       </div>
     </div>
+    <!-- Second desktop line -->
+
   </header>
-  <!-- /Header -->
+  <!-- Header -->
 
   <!-- Main Content -->
-  <main class="territory-unit">
-    <h1 class="territory-unit__title visually-hidden">Страница еденицы проекта</h1>
+  <main class="territory-content">
+    <h1 class="territory-content__title visually-hidden">Карта террритории</h1>
 
     <!-- Intro -->
     <section class="territory-content__desktop-intro desktop-intro">
@@ -129,150 +172,278 @@
     </section>
     <!-- Submenu -->
 
-    <section class="territory-unit__content unit-content">
+    <!-- Map Content -->
+    <section class="territory-content__map territory-map">
 
-      <!-- breadcrumb -->
-      <div class="unit-content__breadcrumbs breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">СЭЗ "Могилев"</a></li>
-          <li class="breadcrumbs__item active-breadcrumb">Территория</li>
-        </ul>
+      <!-- Description -->
+      <div class="territory-map__container">
+        <div class="territory-map__breadcrumbs breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">СЭЗ "Могилев"</a></li>
+            <li class="breadcrumbs__item active-breadcrumb">Территория</li>
+          </ul>
+        </div>
+        <h2 class="territory-map__title">Территория</h2>
+        <p class="territory-map__description">Свободная экономическая зона «Могилев» – это часть территории Республики Беларусь с определенными границами, в пределах которой в отношении ее резидентов устанавливается и действует специальный правовой
+          режим для осуществления ими инвестиционной и предпринимательской деятельности.</p>
       </div>
-      <!-- /breadcrumb -->
+      <!-- Description -->
 
-      <h2 class="unit-content__title">Участок 1</h2>
+      <!-- Filter -->
+      <div class="territory-map__content">
 
-      <div class="unit-content__container">
-
-        <!-- Content Image -->
-        <div class="unit-content__img-container img-content">
-          <div class="img-content__container">
-            <img src="img/territory-unit/image-content.png" width="549" height="573" alt="Фотография участка" class="img-content__img increase-img-click">
+        <div class="territory-map__filter filter-map">
+          <button type="button" class="filter-map__toggle-button filter-mobile-toggle">Фильтр</button>
+          <div class="filter-map__container">
+            <h3 class="filter-map__title">Объекты</h3>
+            <form method="POST" action="" class="filter-map__city city-filter">
+              <fieldset class="city-filter__container">
+                <legend class="city-filter__title toggle-unit-filter open-menu-filter">Город</legend>
+                <ul class="city-filter__list city-list" id="city-list">
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" data-city="mogilev" class="city-filter__input city-input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Могилев</span>
+                    </label>
+                  </li>
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" data-city="osipovichi" class="city-filter__input city-input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Осиповичи</span>
+                    </label>
+                  </li>
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" data-city="shklov" class="city-filter__input city-input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Шклов</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="city-filter__container">
+                <legend class="city-filter__title toggle-unit-filter open-menu-filter">Территория СЭЗ</legend>
+                <ul class="city-filter__list area-list" id="area-list">
+                  <li data-city="mogilev" data-area="area-1" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №1</span>
+                    </label>
+                  </li>
+                  <li data-city="mogilev" data-area="area-2" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №2</span>
+                    </label>
+                  </li>
+                  <li data-city="osipovich" data-area="area-3" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №3</span>
+                    </label>
+                  </li>
+                  <li data-city="mogilev" data-area="area-4" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №4</span>
+                    </label>
+                  </li>
+                  <li data-city="shklov" data-area="area-5" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №5</span>
+                    </label>
+                  </li>
+                  <li data-city="mogilev" data-area="area-6" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №6</span>
+                    </label>
+                  </li>
+                  <li data-city="mogilev" data-area="area-7" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №7</span>
+                    </label>
+                  </li>
+                  <li data-city="shklov" data-area="area-8" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №8</span>
+                    </label>
+                  </li>
+                  <li data-city="shklov" data-area="area-9" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №9</span>
+                    </label>
+                  </li>
+                  <li data-city="shklov" data-area="area-10" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №10</span>
+                    </label>
+                  </li>
+                  <li data-city="shklov" data-area="area-11" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №11</span>
+                    </label>
+                  </li>
+                  <li data-city="osipovichi" data-area="area-12" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №12</span>
+                    </label>
+                  </li>
+                  <li data-city="osipovichi" data-area="area-13" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №13</span>
+                    </label>
+                  </li>
+                  <li data-city="osipovichi" data-area="area-14" class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input toggle-area-list">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">Участок №14</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="city-filter__container">
+                <legend class="city-filter__title toggle-unit-filter open-menu-filter">
+                  Земельные участки
+                </legend>
+                <div class="city-filter__wrapper-checkbox">
+                  <input type="checkbox" id="city-land-checkbox">
+                  <label class="city-filter__checkbox-label" for="city-land-checkbox"></label>
+                </div>
+                <ul class="city-filter__list list-land">
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">от 1 до 10 га</span>
+                    </label>
+                  </li>
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">от 10 до 100 га</span>
+                    </label>
+                  </li>
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">от 100 до 1000 га</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="city-filter__container">
+                <legend class="city-filter__title toggle-unit-filter open-menu-filter">
+                  Свободные площади
+                </legend>
+                <div class="city-filter__wrapper-checkbox free-wrapper">
+                  <input type="checkbox" id="city-free-checkbox" />
+                  <label class="city-filter__checkbox-label free-wrapper__label" for="city-free-checkbox"></label>
+                </div>
+                <ul class="city-filter__list list-free-area">
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">от 0 до 3 000 м2</span>
+                    </label>
+                  </li>
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">от 3 000 до 15 000 м2</span>
+                    </label>
+                  </li>
+                  <li class="city-filter__item">
+                    <label class="city-filter__label">
+                      <input type="checkbox" class="city-filter__input">
+                      <span class="city-filter__checkbox"></span>
+                      <span class="city-filter__text">свыше 15 000 м2</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
           </div>
-          <ul class="img-content__list">
-            <li class="img-content__item">
-              <img src="http://imgholder.ru/50x22" width="50" height="22" alt="Нужны фото" class="img-content__desc-img">
-              <p class="img-content__desc-text"> - граница территории СЭЗ "Могилев"</p>
-            </li>
-            <li class="img-content__item">
-              <img src="http://imgholder.ru/50x22" width="50" height="22" alt="Нужны фото" class="img-content__desc-img">
-              <p class="img-content__desc-text"> - свобоный земельный участок</p>
-            </li>
-            <li class="img-content__item">
-              <img src="http://imgholder.ru/50x22" width="50" height="22" alt="Нужны фото" class="img-content__desc-img">
-              <p class="img-content__desc-text"> - свободные производственные площади</p>
-            </li>
-          </ul>
-        </div>
-        <!-- /Content Image -->
 
-        <!-- land plot -->
-        <div class="unit-content__land-plot land-plot">
-          <h2 class="land-plot__title">Северный промышленный узел</h2>
-          <p class="land-plot__area">Общая площадь участка составляет <span class="land-plot__result">78,5 га.</span></p>
-          <p class="land-plot__all-area">Общая площадь свободных производственных площадей составляет <span class="land-plot__result">1 474,2 м2.</span></p>
-          <ul class="land-plot__list">
-            <li class="land-plot__item">
-              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
-            </li>
-            <li class="land-plot__item">
-              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
-            </li>
-            <li class="land-plot__item">
-              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
-            </li>
-            <li class="land-plot__item">
-              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
-            </li>
-            <li class="land-plot__item">
-              <a href="" class="land-plot__link-area">Земельный участок 4A площадью 3 га</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /land plot -->
+          <!-- Result container for mobile -->
+          <div class="filter-map__result-element result-element">
+            <h3 class="result-element__title">Участок № 3 (район Кирова))</h3>
+            <p class="result-element__area">Общая площадь участка составляет <span class="result-element__area--style">78,5 га.</span></p>
+            <p class="result-element__all-area">Общая площадь свободных производственных площадей составляет <span class="result-element__all-area--style">78,5 га.</span></p>
+            <a href="" class="result-element__more-link">Побробнее</a>
+            <div class="result-element__land-container">
+              <h4 class="result-element__title">Земельные участки</h4>
+              <ul class="result-element__land-list">
+                <li class="result-element__land-item">
+                  <a href="" class="result-element__land-link">Земельный участок 4A площадью 3 га</a>
+                </li>
+                <li class="result-element__land-item">
+                  <a href="" class="result-element__land-link">Земельный участок 4A площадью 3 га</a>
+                </li>
+                <li class="result-element__land-item">
+                  <a href="" class="result-element__land-link">Земельный участок 4A площадью 3 га</a>
+                </li>
+                <li class="result-element__land-item">
+                  <a href="" class="result-element__land-link">Земельный участок 4A площадью 3 га</a>
+                </li>
+              </ul>
+            </div>
+            <div class="result-element__free-area">
+              <h4 class="result-element__title">Свободные площади</h4>
+              <ol class="result-element__free-list">
+                <li class="result-element__free-item">
+                  <a href="" class="result-element__free-link">ОАО «Могилевхимволокно» Стоимость аренды 1 кв. м. составляет от 1,55 до 3,1 евро</a>
+                </li>
+                <li class="result-element__free-item">
+                  <a href="" class="result-element__free-link">СООО «Ритерна М»</a>
+                </li>
+              </ol>
+            </div>
+            <div class="result-element__container-button">
+              <button type="button" class="result-element__close toggle-result-close">Закрыть</button>
+              <button type="button" class="result-element__slide toggle-result-slide">Свернуть</button>
+            </div>
+          </div>
+          <!-- Result container for mobile -->
 
-        <!-- Another area -->
-        <div class="unit-content__enterprises enterprises">
-          <h2 class="enterprises__title">Список предприятий, расположенных на участке:</h2>
-          <ol class="enterprises__list">
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-            <li class="enterprises__item">
-              <a href="" class="enterprises__link">ООО «БелЭмса»</a>
-            </li>
-          </ol>
         </div>
-        <!-- /Another area -->
+        <!-- /Filter -->
+
+        <!-- Map -->
+        <iframe class="territory-map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa868e599f4c54beee9e59c2cdd28f75f11da0f9bab764a80567c71c902f72b7d&amp;source=constructor" width="320" height="636" frameborder="0"></iframe>
+        <!-- /Map -->
       </div>
     </section>
+    <!-- Map Content -->
 
   </main>
   <!-- Main Content -->
@@ -280,12 +451,17 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__top-container">
+
+      <!-- First desktop column -->
       <div class="footer__container">
-        <a href="" class="footer__logo">
+        <a href="index.html" class="footer__logo">
           <img src="img/footer/logo_proto_footer.svg" width="245" height="56" alt="Логотип" class="footer__logo-img">
         </a>
         <p class="footer__description">Администрация СЭЗ «Могилев». Ул. Ленинская 63, г. Могилев, 212030, Республика Беларусь</p>
       </div>
+      <!-- First desktop column -->
+
+      <!-- Second desktop column -->
       <div class="footer__container">
         <p class="footer__title">Меню</p>
         <ul class="footer__list">
@@ -296,6 +472,9 @@
           <li class="footer__item"><a href="" class="footer__link">Контакты</a></li>
         </ul>
       </div>
+      <!-- Second desktop column -->
+
+      <!-- Third desktop column -->
       <div class="footer__container">
         <p class="footer__title">Полезная информация</p>
         <ul class="footer__list">
@@ -306,15 +485,21 @@
           <li class="footer__item"><a href="" class="footer__link">Пользовательское соглашение</a></li>
         </ul>
       </div>
+      <!-- Third desktop column -->
+
+      <!-- Fourth desktop column -->
       <div class="footer__container">
         <p class="footer__title">По любым вопросам</p>
         <ul class="footer__list">
-          <li class="footer__item"><a href="" class="footer__link footer__link--phone">+375 (222) 31-01-48</a></li>
-          <li class="footer__item"><a href="" class="footer__link footer__link--phone">+375 (222) 31-15-81</a></li>
-          <li class="footer__item"><a href="" class="footer__link footer__link--mail">info@fezmogilev.by</a></li>
+          <li class="footer__item"><a href="tel:+375222310148" class="footer__link footer__link--phone">+375 (222) 31-01-48</a></li>
+          <li class="footer__item"><a href="tel:+375222311581" class="footer__link footer__link--phone">+375 (222) 31-15-81</a></li>
+          <li class="footer__item"><a href="mailto:info@fezmogilev.by" class="footer__link footer__link--mail">info@fezmogilev.by</a></li>
         </ul>
       </div>
     </div>
+    <!-- Fourth desktop column -->
+
+    <!-- Fifth desktop column -->
     <div class="footer__last-line">
       <div class="footer__bottom-container">
         <p class="footer__copyright">© СЭЗ «Могилев», 2019. Все права защищены</p>
@@ -323,17 +508,32 @@
         </a>
       </div>
     </div>
+    <!-- Fifth desktop column -->
+
   </footer>
-  <!-- /Footer -->
+  <!-- Footer -->
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+  <!-- jQuery UI -->
+  <script src="js/jquery-ui.js"></script>
+
+  <!-- Custom ScrollBar -->
+  <script src="js/custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+
+  <!-- Header Search Form -->
+  <script src="js/header-search-form.js"></script>
+
   <!-- Mobile Menu -->
   <script src="js/menu-toggle.js"></script>
 
-  <!-- Increase Image -->
-  <script src="js/territory-unit/increase-img.js"></script>
+  <!-- Yandex Map -->
+  <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/yandex-map.js"></script>
+
+  <!-- Filter -->
+  <script src="js/territory-page/filter-territory.js"></script>
 </body>
 
 </html>

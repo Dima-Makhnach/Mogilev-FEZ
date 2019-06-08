@@ -180,7 +180,7 @@
   }
 }
 
-@media (min-width: 1290px) {
+@media (min-width: 1200px) {
   .residents {
     position: relative;
 
@@ -334,21 +334,11 @@
     }
 
     .owl-carousel .owl-nav button.owl-prev {
-      left: 0;
-
-      &:before {
-        right: 50%;
-        margin-right: -13px;
-      }
+      left: -60px;
     }
 
     .owl-carousel .owl-nav button.owl-next {
-      right: 0;
-
-      &:before {
-        left: 50%;
-        margin-left: -13px;
-      }
+      right: -60px;
     }
   }
 
@@ -418,10 +408,34 @@
   }
 }
 
+@media (min-width: 1330px) {
+  .residents {
+    .owl-carousel .owl-nav button.owl-prev {
+      left: -80px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: -80px;
+    }
+  }
+}
+
+@media (min-width: 1390px) {
+  .residents {
+    .owl-carousel .owl-nav button.owl-prev {
+      left: -110px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: -110px;
+    }
+  }
+}
+
 @media (min-width: 1450px) {
   .residents {
     .owl-carousel .owl-nav button.owl-prev {
-      left: -170px;
+      left: -155px;
 
       &:before {
         right: 18px;
@@ -431,7 +445,7 @@
     }
 
     .owl-carousel .owl-nav button.owl-next {
-      right: -170px;
+      right: -155px;
 
       &:before {
         left: 18px;
@@ -516,11 +530,11 @@
 @media (min-width: 1920px) {
   .residents {
     .owl-carousel .owl-nav button.owl-prev {
-      left: -380px;
+      left: -375px;
     }
 
     .owl-carousel .owl-nav button.owl-next {
-      right: -380px;
+      right: -375px;
     }
   }
 }

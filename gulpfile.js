@@ -134,7 +134,7 @@ gulp.task('image', gulp.series( 'copy-image', 'clear-sprite', gulp.parallel("web
 gulp.task('minifyjs', function () {
   return gulp.src('source/js/*.js')
               .pipe(plumber())
-              // .pipe(uglify())
+              .pipe(uglify())
               .pipe(gulp.dest('build/js'))
               .pipe(server.stream());
 });
@@ -155,6 +155,7 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", gulp.parallel('html')).on("change", server.reload);
   gulp.watch("source/js/**/*.js", gulp.parallel('minifyjs')).on("change", server.reload);
   gulp.watch("source/sass/**/*.css", gulp.parallel('copy-css')).on("change", server.reload);
+  gulp.watch("source/js/**/*.js", gulp.parallel('copy')).on("change", server.reload);
 });
 
 // Copy css
@@ -171,11 +172,12 @@ gulp.task("copy-css", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/js/**"
+      "source/js/**/*.js"
     ], {
       base: "source"
     })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
 });
 
 // Full production

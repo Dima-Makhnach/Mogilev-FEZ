@@ -95,7 +95,13 @@
 
 // Responsive
 
-@media (min-width: 1290px) {
+@media (min-width: 768px) {
+  .unit-investor {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
   .investors {
     max-width: 1920px;
     margin: 0 auto;
@@ -337,10 +343,10 @@
 @media (min-width: 1920px) {
   .investors {
     .owl-carousel .owl-nav button.owl-prev {
-      left: -380px;
+      left: -375px;
     }
     .owl-carousel .owl-nav button.owl-next {
-      right: -380px;
+      right: -375px;
     }
   }
 }

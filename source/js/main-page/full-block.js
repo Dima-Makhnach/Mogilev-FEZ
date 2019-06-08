@@ -6,12 +6,4 @@ jQuery(document).ready(function($) {
     nav: true,
     dotsEach: true,
   });
-
-  $('.full-button-video').click(function(event) {
-    $(this).parent('.unit-full').find('.unit-full__content').slideToggle(400)
-  });
-
-  $('.unit-full__content').click(function() {
-    $(this).slideUp(400)
-  });
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -14,20 +14,25 @@
   <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
   <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.css">
 
-  <!-- LightSlider -->
-  <link rel="stylesheet" href="css/lightslider/lightslider.css">
-
   <!-- Custom -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <!-- Header -->
   <header class="header">
+
+    <!-- First desktop line -->
     <div class="header__first-line">
       <div class="header__mobile-container header__mobile-container--first">
+
+        <!-- Eye -->
         <a href="#" class="header__eye">
           <img src="img/header/icon_eye.svg" width="30" height="22" alt="Режим для слабовидящих" class="header__img-eye">
         </a>
+        <!-- Eye -->
+
+        <!-- Language link -->
         <ul class="header__list-lang">
           <li class="header__item-lang">
             <a href="#" class="header__link-lang">RU</a>
@@ -38,12 +43,32 @@
             <a href="#" class="header__link-lang">TR</a>
           </li>
         </ul>
-        <a href="" class="header__search-link">
-          <img src="img/header/icon_search.svg" width="24" height="24" alt="Поиск по сайту" class="header__search-img">
-        </a>
+        <!-- Language link -->
+
+        <!-- Form search -->
+        <div class="header__search-container header-search">
+          <button type="button" class="header-search__link toggle-search-form">
+            <img src="img/header/icon_search.svg" width="24" height="24" alt="Поиск по сайту" class="header-search__img">
+          </button>
+          <form action="" method="POST" class="header-search__form search-form open-search-form">
+            <fieldset class="search-form__container">
+              <legend class="search-form__title visually-hidden">Форма поиска</legend>
+              <label for="" class="search-form__label">
+                <input type="text" class="search-form__input">
+              </label>
+            </fieldset>
+          </form>
+        </div>
+        <!-- Form search -->
+
       </div>
-      <a href="" class="header__phone">+375 (222) 31-01-48</a>
-      <a href="" class="header__mail">info@fezmogilev.by</a>
+
+      <!-- Mobile and Mail -->
+      <a href="tel:+375222310148" class="header__phone">+375 (222) 31-01-48</a>
+      <a href="mailto:info@fezmogilev.by" class="header__mail">info@fezmogilev.by</a>
+      <!-- Mobile and Mail -->
+
+      <!-- Social Link -->
       <div class="header__mobile-container header__mobile-container--second">
         <ul class="header__list-social">
           <li class="header__item-social">
@@ -67,17 +92,26 @@
             </a>
           </li>
         </ul>
-
       </div>
+      <!-- Social Link -->
+
     </div>
+    <!-- First desktop line -->
+
+    <!-- Second desktop line -->
     <div class="header__second-line">
       <div class="header__second-container">
-        <a href="" class="header__logo">
+
+        <!-- Logo -->
+        <a href="index.html" class="header__logo">
           <picture>
-            <source media="(min-width: 1290px)" srcset="img/header/logo_desktop.svg">
+            <source media="(min-width: 1200px)" srcset="img/header/logo_desktop.svg">
             <img src="img/header/logo_mobile.svg" width="150" height="42" alt="Логотип" class="header__logo-img">
           </picture>
         </a>
+        <!-- Logo -->
+
+        <!-- Nav menu -->
         <button class="header__toggle-menu toggle-mobile-menu">Меню</button>
         <nav class="header__navigation navigation-container">
           <ul class="header__list-menu">
@@ -99,11 +133,20 @@
           </ul>
           <a href="" class="header__resident">Стать резидентом</a>
         </nav>
+        <!-- Nav menu -->
+
       </div>
     </div>
+    <!-- Second desktop line -->
+
   </header>
+  <!-- Header -->
+
+  <!-- Content -->
   <main class="content">
     <h1 class="content__title visually-hidden">Главная страница сайта свободной экономической зоны</h1>
+
+    <!-- Full -->
     <section class="content__full-block full-block">
       <h2 class="full-block__title visually-hidden">Главный блок слайдер</h2>
       <ul class="owl-carousel full-block__list">
@@ -111,62 +154,53 @@
           <h3 class="unit-full__title">Свободная экономическая зона «Могилев»</h3>
           <button type="button" class="unit-full__play-button full-button-video">Смотреть видео</button>
           <img src="img/main-page/full-block-gallery/main_banner.png" width="1920" height="600" alt="Свободная экономическая зона" class="unit-full__background">
-          <div class="unit-full__content">
-            <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
         <li class="full-block_item unit-full">
           <h3 class="unit-full__title">Свободная экономическая зона «Могилев»</h3>
           <button type="button" class="unit-full__play-button full-button-video">Смотреть видео</button>
           <img src="img/main-page/full-block-gallery/main_banner.png" width="1920" height="600" alt="Свободная экономическая зона" class="unit-full__background">
-          <div class="unit-full__content">
-            <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
         <li class="full-block_item unit-full">
           <h3 class="unit-full__title">Свободная экономическая зона «Могилев»</h3>
           <button type="button" class="unit-full__play-button full-button-video">Смотреть видео</button>
           <img src="img/main-page/full-block-gallery/main_banner.png" width="1920" height="600" alt="Свободная экономическая зона" class="unit-full__background">
-          <div class="unit-full__content">
-            <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
         <li class="full-block_item unit-full">
           <h3 class="unit-full__title">Свободная экономическая зона «Могилев»</h3>
           <button type="button" class="unit-full__play-button full-button-video">Смотреть видео</button>
           <img src="img/main-page/full-block-gallery/main_banner.png" width="1920" height="600" alt="Свободная экономическая зона" class="unit-full__background">
-          <div class="unit-full__content">
-            <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
         <li class="full-block_item unit-full">
           <h3 class="unit-full__title">Свободная экономическая зона «Могилев»</h3>
           <button type="button" class="unit-full__play-button full-button-video">Смотреть видео</button>
           <img src="img/main-page/full-block-gallery/main_banner.png" width="1920" height="600" alt="Свободная экономическая зона" class="unit-full__background">
-          <div class="unit-full__content">
-            <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          <iframe class="unit-full__video" src="https://www.youtube.com/embed/9Ri7TcukAJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
       </ul>
     </section>
+    <!-- /Full -->
+
+    <!-- 3d Tour -->
     <section class="content__land-gallery land-gallery">
       <h2 class="land-gallery__title">
         3D тур по участкам
         <span class="land-gallery__title--desc">Нажмите на большое фото для того чтобы посмотреть 3D тур по территории подходящего участка</span>
       </h2>
-      <ul class="land-gallery__list">
-        <!-- <li class="land-gallery__item land-gallery__item--first unit-land">
-          <a href="#" class="unit-land__view-map-desktop">
-            Смотреть на карте
-          </a>
-        </li> -->
+
+      <!-- Owl Slider -->
+      <div class="land-gallery__slider-container">
+      <ul class="owl-carousel land-gallery__list">
         <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
           <div class="unit-land__img-container">
             <a href="" class="unit-land__button-3d">
               <span class="unit-land__button-3d--tour">3D тур</span>
               по участку
             </a>
-            <img src="img/main-page/land-gallery/img.png" width="630" height="420" alt="Участок 1" class="unit-land__img">
+            <img src="img/main-page/land-gallery/1.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
           </div>
           <div class="unit-land__content">
             <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
@@ -186,7 +220,7 @@
               <span class="unit-land__button-3d--tour">3D тур</span>
               по участку
             </a>
-            <img src="img/main-page/land-gallery/img.png" width="630" height="420" alt="Участок 1" class="unit-land__img">
+            <img src="img/main-page/land-gallery/2.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
           </div>
           <div class="unit-land__content">
             <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
@@ -206,7 +240,7 @@
               <span class="unit-land__button-3d--tour">3D тур</span>
               по участку
             </a>
-            <img src="img/main-page/land-gallery/img.png" width="630" height="420" alt="Участок 1" class="unit-land__img">
+            <img src="img/main-page/land-gallery/3.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
           </div>
           <div class="unit-land__content">
             <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
@@ -226,7 +260,7 @@
               <span class="unit-land__button-3d--tour">3D тур</span>
               по участку
             </a>
-            <img src="img/main-page/land-gallery/img.png" width="630" height="420" alt="Участок 1" class="unit-land__img">
+            <img src="img/main-page/land-gallery/4.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
           </div>
           <div class="unit-land__content">
             <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
@@ -246,7 +280,7 @@
               <span class="unit-land__button-3d--tour">3D тур</span>
               по участку
             </a>
-            <img src="img/main-page/land-gallery/img.png" width="630" height="420" alt="Участок 1" class="unit-land__img">
+            <img src="img/main-page/land-gallery/5.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
           </div>
           <div class="unit-land__content">
             <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
@@ -266,7 +300,167 @@
               <span class="unit-land__button-3d--tour">3D тур</span>
               по участку
             </a>
-            <img src="img/main-page/land-gallery/img.png" width="630" height="420" alt="Участок 1" class="unit-land__img">
+            <img src="img/main-page/land-gallery/6.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
+          </div>
+          <div class="unit-land__content">
+            <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
+            <div class="unit-land__desc"><span class="unit-land__desc--style">Электроснабжение</span> – запитка от подстанции ПС 110/10 кВ «Индустриальная» на участке № 4 на расстоянии 2,5 км. Вдоль участка проходит линия электропередач. На участке
+              имеется трансформаторная подстанция (резерв
+              мощности отсутствует).<br>
+              <br>
+              <span class="unit-land__desc--style">Водоснабжение</span> – вдоль участка проходит водопровод хозпитьевой диаметром 400 мм.<br>
+              <br>
+              Вдоль участка проходит газопровод высокого давления диаметром 426 мм газопровод низкого давления диаметром 159 мм.</div>
+            <a href="" class="unit-land__schema">Схема участка</a>
+          </div>
+        </li>
+        <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
+          <div class="unit-land__img-container">
+            <a href="" class="unit-land__button-3d">
+              <span class="unit-land__button-3d--tour">3D тур</span>
+              по участку
+            </a>
+            <img src="img/main-page/land-gallery/7.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
+          </div>
+          <div class="unit-land__content">
+            <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
+            <div class="unit-land__desc"><span class="unit-land__desc--style">Электроснабжение</span> – запитка от подстанции ПС 110/10 кВ «Индустриальная» на участке № 4 на расстоянии 2,5 км. Вдоль участка проходит линия электропередач. На участке
+              имеется трансформаторная подстанция (резерв
+              мощности отсутствует).<br>
+              <br>
+              <span class="unit-land__desc--style">Водоснабжение</span> – вдоль участка проходит водопровод хозпитьевой диаметром 400 мм.<br>
+              <br>
+              Вдоль участка проходит газопровод высокого давления диаметром 426 мм газопровод низкого давления диаметром 159 мм.</div>
+            <a href="" class="unit-land__schema">Схема участка</a>
+          </div>
+        </li>
+        <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
+          <div class="unit-land__img-container">
+            <a href="" class="unit-land__button-3d">
+              <span class="unit-land__button-3d--tour">3D тур</span>
+              по участку
+            </a>
+            <img src="img/main-page/land-gallery/8.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
+          </div>
+          <div class="unit-land__content">
+            <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
+            <div class="unit-land__desc"><span class="unit-land__desc--style">Электроснабжение</span> – запитка от подстанции ПС 110/10 кВ «Индустриальная» на участке № 4 на расстоянии 2,5 км. Вдоль участка проходит линия электропередач. На участке
+              имеется трансформаторная подстанция (резерв
+              мощности отсутствует).<br>
+              <br>
+              <span class="unit-land__desc--style">Водоснабжение</span> – вдоль участка проходит водопровод хозпитьевой диаметром 400 мм.<br>
+              <br>
+              Вдоль участка проходит газопровод высокого давления диаметром 426 мм газопровод низкого давления диаметром 159 мм.</div>
+            <a href="" class="unit-land__schema">Схема участка</a>
+          </div>
+        </li>
+        <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
+          <div class="unit-land__img-container">
+            <a href="" class="unit-land__button-3d">
+              <span class="unit-land__button-3d--tour">3D тур</span>
+              по участку
+            </a>
+            <img src="img/main-page/land-gallery/9.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
+          </div>
+          <div class="unit-land__content">
+            <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
+            <div class="unit-land__desc"><span class="unit-land__desc--style">Электроснабжение</span> – запитка от подстанции ПС 110/10 кВ «Индустриальная» на участке № 4 на расстоянии 2,5 км. Вдоль участка проходит линия электропередач. На участке
+              имеется трансформаторная подстанция (резерв
+              мощности отсутствует).<br>
+              <br>
+              <span class="unit-land__desc--style">Водоснабжение</span> – вдоль участка проходит водопровод хозпитьевой диаметром 400 мм.<br>
+              <br>
+              Вдоль участка проходит газопровод высокого давления диаметром 426 мм газопровод низкого давления диаметром 159 мм.</div>
+            <a href="" class="unit-land__schema">Схема участка</a>
+          </div>
+        </li>
+        <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
+          <div class="unit-land__img-container">
+            <a href="" class="unit-land__button-3d">
+              <span class="unit-land__button-3d--tour">3D тур</span>
+              по участку
+            </a>
+            <img src="img/main-page/land-gallery/10.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
+          </div>
+          <div class="unit-land__content">
+            <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
+            <div class="unit-land__desc"><span class="unit-land__desc--style">Электроснабжение</span> – запитка от подстанции ПС 110/10 кВ «Индустриальная» на участке № 4 на расстоянии 2,5 км. Вдоль участка проходит линия электропередач. На участке
+              имеется трансформаторная подстанция (резерв
+              мощности отсутствует).<br>
+              <br>
+              <span class="unit-land__desc--style">Водоснабжение</span> – вдоль участка проходит водопровод хозпитьевой диаметром 400 мм.<br>
+              <br>
+              Вдоль участка проходит газопровод высокого давления диаметром 426 мм газопровод низкого давления диаметром 159 мм.</div>
+            <a href="" class="unit-land__schema">Схема участка</a>
+          </div>
+        </li>
+        <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
+          <div class="unit-land__img-container">
+            <a href="" class="unit-land__button-3d">
+              <span class="unit-land__button-3d--tour">3D тур</span>
+              по участку
+            </a>
+            <img src="img/main-page/land-gallery/11.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
+          </div>
+          <div class="unit-land__content">
+            <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
+            <div class="unit-land__desc"><span class="unit-land__desc--style">Электроснабжение</span> – запитка от подстанции ПС 110/10 кВ «Индустриальная» на участке № 4 на расстоянии 2,5 км. Вдоль участка проходит линия электропередач. На участке
+              имеется трансформаторная подстанция (резерв
+              мощности отсутствует).<br>
+              <br>
+              <span class="unit-land__desc--style">Водоснабжение</span> – вдоль участка проходит водопровод хозпитьевой диаметром 400 мм.<br>
+              <br>
+              Вдоль участка проходит газопровод высокого давления диаметром 426 мм газопровод низкого давления диаметром 159 мм.</div>
+            <a href="" class="unit-land__schema">Схема участка</a>
+          </div>
+        </li>
+        <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
+          <div class="unit-land__img-container">
+            <a href="" class="unit-land__button-3d">
+              <span class="unit-land__button-3d--tour">3D тур</span>
+              по участку
+            </a>
+            <img src="img/main-page/land-gallery/12.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
+          </div>
+          <div class="unit-land__content">
+            <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
+            <div class="unit-land__desc"><span class="unit-land__desc--style">Электроснабжение</span> – запитка от подстанции ПС 110/10 кВ «Индустриальная» на участке № 4 на расстоянии 2,5 км. Вдоль участка проходит линия электропередач. На участке
+              имеется трансформаторная подстанция (резерв
+              мощности отсутствует).<br>
+              <br>
+              <span class="unit-land__desc--style">Водоснабжение</span> – вдоль участка проходит водопровод хозпитьевой диаметром 400 мм.<br>
+              <br>
+              Вдоль участка проходит газопровод высокого давления диаметром 426 мм газопровод низкого давления диаметром 159 мм.</div>
+            <a href="" class="unit-land__schema">Схема участка</a>
+          </div>
+        </li>
+        <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
+          <div class="unit-land__img-container">
+            <a href="" class="unit-land__button-3d">
+              <span class="unit-land__button-3d--tour">3D тур</span>
+              по участку
+            </a>
+            <img src="img/main-page/land-gallery/13.jpg" width="630" height="420" alt="Участок 1" class="unit-land__img">
+          </div>
+          <div class="unit-land__content">
+            <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
+            <div class="unit-land__desc"><span class="unit-land__desc--style">Электроснабжение</span> – запитка от подстанции ПС 110/10 кВ «Индустриальная» на участке № 4 на расстоянии 2,5 км. Вдоль участка проходит линия электропередач. На участке
+              имеется трансформаторная подстанция (резерв
+              мощности отсутствует).<br>
+              <br>
+              <span class="unit-land__desc--style">Водоснабжение</span> – вдоль участка проходит водопровод хозпитьевой диаметром 400 мм.<br>
+              <br>
+              Вдоль участка проходит газопровод высокого давления диаметром 426 мм газопровод низкого давления диаметром 159 мм.</div>
+            <a href="" class="unit-land__schema">Схема участка</a>
+          </div>
+        </li>
+        <li class="land-gallery__item unit-land" data-thumb="img/main-page/land-gallery/img.png" data-src="img/main-page/land-gallery/img.png">
+          <div class="unit-land__img-container">
+            <a href="" class="unit-land__button-3d">
+              <span class="unit-land__button-3d--tour">3D тур</span>
+              по участку
+            </a>
+            <img src="img/main-page/land-gallery/14.png" width="630" height="420" alt="Участок 1" class="unit-land__img">
           </div>
           <div class="unit-land__content">
             <h3 class="unit-land__title">Участок №1 площадью 373 га</h3>
@@ -281,14 +475,68 @@
           </div>
         </li>
       </ul>
+      <ul class="owl-carousel land-gallery__thumbnails owl-thumbnail">
+        <li class="owl-thumbnail__item owl-thumbnail__item--first">
+          <a href="#naher" target="_blank" class="owl-thumbnail__view-map-desktop">
+            Смотреть на карте
+          </a>
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/1.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/2.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/3.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/4.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/5.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/6.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/7.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/8.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/9.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/10.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/11.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/12.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/13.jpg" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+        <li class="owl-thumbnail__item">
+          <img src="img/main-page/land-gallery/14.png" width="198" height="134" alt="" class="owl-thumbnail__image">
+        </li>
+      </ul>
+      </div>
+      <!-- Slider owl carousel -->
+
       <div class="land-gallery__controls">
-        <button type="button" class="land-gallery__prev land-prev">
-          <</button> <button type="button" class="land-gallery__next land-next">>
-        </button>
+        <button type="button" class="land-gallery__prev land-prev"></button>
+        <button type="button" class="land-gallery__next land-next"></button>
       </div>
       <a href="" class="land-gallery__button">Смотреть больше участков</a>
       <a href="" class="land-gallery__view-map">Смотреть на карте</a>
     </section>
+    <!-- /3d Tour -->
+
+    <!-- Investors -->
     <section class="content__investors investors">
       <div class="investors__container">
         <h2 class="investors__title">
@@ -314,7 +562,7 @@
           <li class="investors__item unit-investor">
             <div class="unit-investor__front unit-investor__side">
               <div class="unit-investor__content">
-                <img src="img/main-page/investors/icon_tax.svg" width="58" height="60" alt="Налоговые льготы" class="unit-investor__img">
+                <img src="img/main-page/investors/icon_preference.svg" width="42" height="60" alt="Налоговые льготы" class="unit-investor__img">
                 <h3 class="unit-investor__title">Таможенные преференции</h3>
               </div>
             </div>
@@ -328,8 +576,8 @@
           <li class="investors__item unit-investor">
             <div class="unit-investor__front unit-investor__side">
               <div class="unit-investor__content">
-                <img src="img/main-page/investors/icon_tax.svg" width="58" height="60" alt="Налоговые льготы" class="unit-investor__img">
-                <h3 class="unit-investor__title">Налоговые льготы</h3>
+                <img src="img/main-page/investors/icon_location.svg" width="58" height="60" alt="Налоговые льготы" class="unit-investor__img">
+                <h3 class="unit-investor__title">Месторасположение</h3>
               </div>
             </div>
             <div class="unit-investor__back unit-investor__side">
@@ -384,6 +632,9 @@
         </ul>
       </div>
     </section>
+    <!-- Investors -->
+
+    <!-- Territory -->
     <section class="content__territory territory">
       <h2 class="territory__title">Территории. Свободные участки. Площади</h2>
       <ul class="owl-carousel territory__list">
@@ -445,6 +696,9 @@
         </li>
       </ul>
     </section>
+    <!-- Territory -->
+
+    <!-- Residents -->
     <section class="content__residents residents">
       <div class="residents__title-container">
         <h2 class="residents__title">
@@ -499,19 +753,32 @@
       </ul>
       <a href="" class="residents__link">Все резиденты</a>
     </section>
-    <div class="content__map map">
+    <!-- Residents -->
+
+    <!-- Yandex Map -->
+    <section class="content__map map">
       <h2 class="map__title visually-hidden">Администрация СЭЗ «Могилев». Ул. Ленинская 63, г. Могилев, 212030, Республика Беларусь</h2>
       <div class="map__content" id="map"></div>
-    </div>
+    </section>
+    <!-- Yandex Map -->
+
   </main>
+  <!-- Content -->
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer__top-container">
+
+      <!-- First desktop column -->
       <div class="footer__container">
-        <a href="" class="footer__logo">
+        <a href="index.html" class="footer__logo">
           <img src="img/footer/logo_proto_footer.svg" width="245" height="56" alt="Логотип" class="footer__logo-img">
         </a>
         <p class="footer__description">Администрация СЭЗ «Могилев». Ул. Ленинская 63, г. Могилев, 212030, Республика Беларусь</p>
       </div>
+      <!-- First desktop column -->
+
+      <!-- Second desktop column -->
       <div class="footer__container">
         <p class="footer__title">Меню</p>
         <ul class="footer__list">
@@ -522,6 +789,9 @@
           <li class="footer__item"><a href="" class="footer__link">Контакты</a></li>
         </ul>
       </div>
+      <!-- Second desktop column -->
+
+      <!-- Third desktop column -->
       <div class="footer__container">
         <p class="footer__title">Полезная информация</p>
         <ul class="footer__list">
@@ -532,15 +802,21 @@
           <li class="footer__item"><a href="" class="footer__link">Пользовательское соглашение</a></li>
         </ul>
       </div>
+      <!-- Third desktop column -->
+
+      <!-- Fourth desktop column -->
       <div class="footer__container">
         <p class="footer__title">По любым вопросам</p>
         <ul class="footer__list">
-          <li class="footer__item"><a href="" class="footer__link footer__link--phone">+375 (222) 31-01-48</a></li>
-          <li class="footer__item"><a href="" class="footer__link footer__link--phone">+375 (222) 31-15-81</a></li>
-          <li class="footer__item"><a href="" class="footer__link footer__link--mail">info@fezmogilev.by</a></li>
+          <li class="footer__item"><a href="tel:+375222310148" class="footer__link footer__link--phone">+375 (222) 31-01-48</a></li>
+          <li class="footer__item"><a href="tel:+375222311581" class="footer__link footer__link--phone">+375 (222) 31-15-81</a></li>
+          <li class="footer__item"><a href="mailto:info@fezmogilev.by" class="footer__link footer__link--mail">info@fezmogilev.by</a></li>
         </ul>
       </div>
     </div>
+    <!-- Fourth desktop column -->
+
+    <!-- Fifth desktop column -->
     <div class="footer__last-line">
       <div class="footer__bottom-container">
         <p class="footer__copyright">© СЭЗ «Могилев», 2019. Все права защищены</p>
@@ -549,16 +825,19 @@
         </a>
       </div>
     </div>
+    <!-- Fifth desktop column -->
+
   </footer>
+  <!-- Footer -->
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  <!-- Lightslider -->
-  <script src="js/lightslider/lightslider.js"></script>
-
   <!-- Owl Carousel -->
   <script src="js/owl-carousel/owl.carousel.js"></script>
+
+  <!-- Header Search Form -->
+  <script src="js/header-search-form.js"></script>
 
   <!-- Mobile Menu -->
   <script src="js/menu-toggle.js"></script>
@@ -571,6 +850,9 @@
 
   <!-- Full Block -->
   <script src="js/main-page/full-block.js"></script>
+
+  <!-- Video Full BLock -->
+  <script src="js/main-page/video-full.js"></script>
 
   <!-- Yandex Map -->
   <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
